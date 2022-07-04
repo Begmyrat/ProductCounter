@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/counter_navigation"
+    app:startDestination="@id/fragmentQrReader">
+
+    <fragment
+        android:id="@+id/fragmentQrReader"
+        android:name="com.example.elegantcount.fragment.FragmentQrReader"
+        android:label="fragment_qr_reader"
+        tools:layout="@layout/fragment_qr_reader" >
+        <action
+            android:id="@+id/action_fragmentQrReader_to_fragmentProductList"
+            app:destination="@id/fragmentProductList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProductList"
+        android:name="com.example.elegantcount.fragment.FragmentProductList"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" />
+
+</navigation>

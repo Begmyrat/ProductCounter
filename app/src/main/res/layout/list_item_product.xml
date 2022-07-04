@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:strokeColor="#A8A8A8"
+    app:strokeWidth="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp">
+
+        <TextView
+            android:id="@+id/t_boxNumber"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#DDDDDD"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="1"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/t_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="analgin"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@+id/t_boxNumber"
+            app:layout_constraintRight_toLeftOf="@+id/i_close"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/t_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:text="537ds32hgf34234r"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/t_name"
+            app:layout_constraintLeft_toRightOf="@+id/t_boxNumber"
+            app:layout_constraintRight_toLeftOf="@+id/i_close" />
+
+        <TextView
+            android:id="@+id/t_periodNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="537ds32hgf34234r"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/t_id"
+            app:layout_constraintLeft_toLeftOf="@+id/t_id"
+            app:layout_constraintRight_toRightOf="@+id/t_id" />
+
+        <TextView
+            android:id="@+id/t_expire"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="537ds32hgf34234r"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/t_periodNo"
+            app:layout_constraintLeft_toLeftOf="@+id/t_id"
+            app:layout_constraintRight_toRightOf="@+id/t_id" />
+
+        <ImageView
+            android:id="@+id/i_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_baseline_close_24"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
